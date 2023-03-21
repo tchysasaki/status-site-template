@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Service Status</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/bootstrap5/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Service Status</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Web Service A</h3>
+                <p class="card-text text-success">Operational</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Web Service B</h3>
+                <p class="card-text text-danger">Outage</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <h2>Past Incidents</h2>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Web Service B</div>
+              <small class="text-muted">Mar 15, 2023</small>
+              <p>A major outage occurred due to a server failure. Service was restored after 6 hours.</p>
+            </div>
+            <span class="badge bg-danger rounded-pill">Critical</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Web Service A</div>
+              <small class="text-muted">Mar 13, 2023</small>
+              <p>A minor issue was reported with the authentication system. The issue was resolved within an hour.</p>
+            </div>
+            <span class="badge bg-warning text-dark rounded-pill">Degraded</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--
+    Operational: 運用中
+    Outage: 障害発生
+    Maintenance: メンテナンス中
+    Partial Outage: 一部障害
+    Degraded Performance: 性能低下
+    Security Event: セキュリティイベント
+    Investigating: 調査中
+    Identified: 特定済み
+    Monitoring: モニタリング中
+    Resolved: 解決済み
+    Post-Mortem: 後処理中
+    Closed: 完了
+  -->
+  <!-- Bootstrap JavaScript -->
+  <script src="/bootstrap5/js/bootstrap.min.js"></script>
+</body>
+</html>
